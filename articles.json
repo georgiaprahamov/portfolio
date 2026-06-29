@@ -1,0 +1,57 @@
+[
+    {
+        "id": "understanding-rag",
+        "title": "Understanding RAG",
+        "description": "Learn why embeddings require vector databases and how semantic search works internally.",
+        "category": "AI",
+        "difficulty": "Intermediate",
+        "readingTime": "8 min read",
+        "tags": ["Embeddings", "RAG", "OpenAI", "Search"],
+        "date": "2026-06-01",
+        "featured": true
+    },
+    {
+        "id": "transformers-explained",
+        "title": "Transformers Explained Simply",
+        "description": "A visual guide to understanding the attention mechanism behind modern LLMs.",
+        "category": "Machine Learning",
+        "difficulty": "Beginner",
+        "readingTime": "12 min read",
+        "tags": ["Transformers", "Attention", "Deep Learning"],
+        "date": "2026-05-15",
+        "featured": true
+    },
+    {
+        "id": "docker-internals",
+        "title": "How Docker Actually Works",
+        "description": "Deep dive into cgroups, namespaces, and the linux kernel features that power containers.",
+        "category": "Docker",
+        "difficulty": "Advanced",
+        "readingTime": "15 min read",
+        "tags": ["Docker", "Linux", "Containers", "DevOps"],
+        "date": "2026-05-02",
+        "featured": true
+    },
+    {
+        "id": "why-rest-apis",
+        "title": "Why REST APIs Exist",
+        "description": "The history and architectural constraints of Representational State Transfer.",
+        "category": "System Design",
+        "difficulty": "Beginner",
+        "readingTime": "6 min read",
+        "tags": ["API", "REST", "Architecture"],
+        "date": "2026-04-20",
+        "featured": true
+    },
+    {
+        "id": "prompt-engineering-best-practices",
+        "title": "Prompt Engineering Best Practices",
+        "description": "Techniques for writing robust, repeatable prompts for production AI applications.",
+        "category": "LLM",
+        "difficulty": "Intermediate",
+        "readingTime": "10 min read",
+        "tags": ["Prompting", "LLMs", "Production"],
+        "date": "2026-04-10",
+        "featured": true
+    }
+]
