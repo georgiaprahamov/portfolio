@@ -84,8 +84,22 @@ document.addEventListener('DOMContentLoaded', () => {
             submitBtn.style.opacity = '0.8';
             submitBtn.disabled = true;
 
-            // Simulate network request
-            setTimeout(() => {
+            // Send request to FormSubmit
+            fetch("https://formsubmit.co/ajax/gogo46219@gmail.com", {
+                method: "POST",
+                headers: { 
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify({
+                    name: document.getElementById('name').value,
+                    email: document.getElementById('email').value,
+                    message: document.getElementById('message').value,
+                    _subject: "New contact from Portfolio!"
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
                 submitBtn.textContent = 'Message Sent!';
                 submitBtn.style.background = 'linear-gradient(135deg, #00f0ff, #00ffaa)';
                 contactForm.reset();
@@ -96,7 +110,16 @@ document.addEventListener('DOMContentLoaded', () => {
                     submitBtn.style.opacity = '1';
                     submitBtn.disabled = false;
                 }, 3000);
-            }, 1500);
+            })
+            .catch(error => {
+                console.error(error);
+                submitBtn.textContent = 'Error!';
+                setTimeout(() => {
+                    submitBtn.textContent = originalText;
+                    submitBtn.style.opacity = '1';
+                    submitBtn.disabled = false;
+                }, 3000);
+            });
         });
     }
 });
